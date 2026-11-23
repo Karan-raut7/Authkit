@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account — AuthKit</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">authkit<span>.</span></a>
+        <nav>
+            <a href="login" class="nav-link">Log in</a>
+        </nav>
+    </header>
+
+
+<main class="auth-container">
+    <section class="auth-card">
+        <h1>Create your account</h1>
+        <p class="auth-description">Get started with AuthKit.</p>
+
+        <form id="register-form">
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Create a password"
+                    autocomplete="new-password"
+                    required
+                >
+            </div>
+
+            <p id="message" class="form-message" role="status"></p>
+
+            <button type="submit" class="button button-primary auth-submit">
+                Create account
+            </button>
+        </form>
+
+        <p class="auth-footer">
+            Already have an account?
+            <a href="login">Log in</a>
+        </p>
+    </section>
+</main>
+
+<script src="/static/js/api.js"></script>
+<script src="/static/js/register.js"></script>
+
+
+</body>
+</html>

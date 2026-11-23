@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111111">
+    <title>Dashboard — AuthKit</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header class="navbar">
+       <a href="/" class="logo">authkit<span>.</span></a>
+
+    <nav>
+        <button id="logout-button" class="button button-secondary">
+            Log out
+        </button>
+    </nav>
+</header>
+
+<main class="dashboard-container">
+    <section class="dashboard-header">
+        <span class="eyebrow">YOUR ACCOUNT</span>
+        <h1>Dashboard</h1>
+        <p>Manage your AuthKit account.</p>
+    </section>
+
+    <section class="dashboard-card">
+        <h2>Account information</h2>
+
+        <div class="account-field">
+            <span class="field-label">Email address</span>
+            <span id="user-email" class="field-value">Loading...</span>
+        </div>
+
+        <div class="account-field">
+            <span class="field-label">Account status</span>
+            <span class="status-badge">Authenticated</span>
+        </div>
+    </section>
+
+    <section class="dashboard-card security-card">
+        <div class="security-card-content">
+            <span class="eyebrow">SECURITY</span>
+            <h2>Password &amp; security</h2>
+            <p>
+                Keep your account secure by updating your password
+                regularly. Use a strong, unique password.
+            </p>
+        </div>
+
+        <a href="/change-password"
+           class="button button-primary">
+            Change password &rarr;
+        </a>
+    </section>
+
+    <p id="dashboard-message" class="form-message" role="status"></p>
+</main>
+
+<footer>
+    <p>© 2026 AuthKit. Built with care.</p>
+</footer>
+
+<script src="/static/js/api.js"></script>
+<script src="/static/js/dashboard.js"></script>
+
+
+</body>
+</html>
